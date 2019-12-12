@@ -24,7 +24,6 @@ class Cloth(models.Model):
     pattern = models.CharField(max_length=16)
     month = models.ForeignKey(Month, on_delete=models.CASCADE)
     temp = models.ForeignKey(Temp, on_delete=models.CASCADE)
-    # label = models.ImageField(blank=True)
     label = models.CharField(max_length=16)
     img_url = models.CharField(max_length=300)
     user_clothes = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="my_clothes")
@@ -58,12 +57,6 @@ class Article(models.Model):
     image_thumbnail = ImageSpecField(
         source='image',
         processors=[ResizeToFit(1000,1000)],
-        # processors = [ResizeToFill(1000,1000)], 
         format='JPEG',
         options={'quality':100}
     )
-
-
-# class HashTag(models.Model):
-#     tag = models.CharField(max_length=16, unique=True)
-#     articles = models.ManyToManyField(Article, related_name="tags")
