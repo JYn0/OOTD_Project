@@ -64,5 +64,5 @@
 
 
 ## 설치 파일
-[requirements.txt]()
+[requirements.txt](https://github.com/JYn0/OOTD_Project/blob/master/requirements.txt)
 
