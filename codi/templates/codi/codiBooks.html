@@ -40,7 +40,6 @@
                     {% else %}
                         <button type="button" class="btn btn-secondary likes" data-article-id='{{article.id}}'><i class="fas fa-thumbs-up"></i></button>
                     {% endif %}
-                    <span class="likes_cnt">{{article.user_likes.all|length}} </span>
                 </div>
 
                 <textarea name="contents" class="form-control mb-2" style="font-size: 1.7em"  rows="5" disabled>{{article.contents}}</textarea>

@@ -2,10 +2,10 @@
 <div class="card text-center">
     <img class="clothes rounded" src="{{top.img_url}}">
     <div class="card-body">
-        <p>사용자 id : {{user.id}}</p>
+        {% comment %} <p>사용자 id : {{user.id}}</p> {% endcomment %}
         <span class="card-text">{{top.cloth_type}}</span>
-        {{top.user_clothes}}
-        {{top.img_url}}
+        {% comment %} {{top.user_clothes}}
+        {{top.img_url}} {% endcomment %}
         <button type="button" data-img="{{top.img_url}}" id="addBtn" class="btn btn-secondary addBtn">add</button>
     </div>
 </div>
